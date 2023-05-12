@@ -1,0 +1,27 @@
+.ani
+{
+    height: 200px;
+    width: 200px;
+    background: red;
+    border: 2px solid blue;
+    position: relative;
+    animation:animate 0.6s;
+    /* animation-delay: 200ms; */
+}
+.ani:hover
+{
+    background: green;
+    
+    animation-name: animates;
+    animation-duration: 600ms;
+    /* animation-delay: 200ms; */
+    animation-timing-function: linear;
+}
+@keyframes animates {
+    from{transform:scale(0)}
+    to{ transform:scale(1)}
+    
+}
+
+@keyframes animate
+{from{transform:scale(0)} to{transform:scale(1)}}

@@ -1,0 +1,55 @@
+body
+{
+    /* background-image: url("background image.jpg");
+    background-size: cover; */
+    font-family:  'calibri';
+    width: 60%;
+    padding-left: 250px;
+    box-shadow: 10px 10px 10px;
+}
+.profile
+{
+    background-color: rgb(122, 220, 255);
+}
+.profile-table td   
+{
+    width: 600px;
+    text-align: left;
+}
+#details-table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #details-table td, #details-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #details-table tr:nth-child(even){background-color: #f4f4f4;}
+  
+  #details-table tr:hover {background-color: #c4c4c4;}
+  
+  #details-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(0, 147, 201);
+    color: white;
+  }
+hr
+{
+    color: rgb(122, 220, 255);
+}
+h3
+{
+    background-color: rgb(122, 220, 255);
+}
+img
+{
+    border-radius: 7%;
+}
+.technical-skills{
+    padding-left: 23px ;
+}

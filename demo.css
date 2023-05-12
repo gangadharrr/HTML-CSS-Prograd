@@ -1,0 +1,117 @@
+#demo
+{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 5px solid blue ;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+}
+#demoo
+{
+    width: 180px;
+    height: 180px;;
+    background-color: aquamarine;
+    border: 5px solid blue ;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    margin: 10px 10px ;
+}
+.shapes{
+    height: 1000px;
+    width: 1000px;
+    border: 2px solid gray;
+    padding: 20px;
+}
+
+.shape1{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: rgb(255, 0, 255);
+}
+
+.shape2{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: rgb(255, 38, 0);
+    transform: translate(-20px, 80px);
+}
+
+.shape3{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    
+    background-color: rgb(0, 242, 255);
+    transform: translate(90px, 145px);
+    rotate:45deg;
+}
+
+.shape4{
+    height: 100px;
+    width: 100px;
+    margin: 0px 180px ;
+    display: inline-block;
+    background-color: rgb(234, 255, 0);
+    transform: translate(160px, 335px);
+    rotate:70deg;
+}
+
+
+.shape5{
+    height: 100px;
+    width: 100px;
+    margin-left: 200px;
+    display: inline-block;
+    background-color: rgb(128, 0, 0);
+    transform: translate(50px, 500px);
+    scale:0.5 0.5;
+}
+
+.shape6{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: yellowgreen;
+    transform: translate(0px, 500px);
+    scale:1 0.5;
+}
+.shape7{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: #f96d90;
+    transform: translate(-366px, 620px);
+    scale:0.5 0.5;
+}
+
+.shape8{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color: rgb(195, 169, 255);
+    transform: translate(-157px, 620px);
+    scale:1 0.5;
+}
+.shape9{
+    height: 100px;
+    width: 100px;
+    margin-left: 200px;
+    display: inline-block;
+    background-color: rgb(7, 95, 150);
+    transform: scaleY(0.8);
+}
+.shape1:hover, .shape2:hover, .shape3:hover, .shape4:hover
+{
+    display: block;
+    transform: rotate(45deg);
+}
+
+
+.shape5:hover, .shape6:hover
+{
+    display: block;
+    transform: skewX(45deg);
+}
