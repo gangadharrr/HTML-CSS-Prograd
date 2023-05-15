@@ -1,34 +1,51 @@
-.container{
-    display: inline-grid;
-    grid-template-rows: auto ;
-    grid-template-columns: auto auto auto auto auto auto;
+.container
+{
+    margin-top: 14%;
     height: 200px;
     width: 1300px;  
-    background-color: salmon;
+}
+.slider{
+    display: inline-grid;
+    grid-template-rows: auto ;
+    grid-template-columns: auto auto auto auto auto auto ;
+    height: 200px;
+    width: 1300px;  
     column-gap: 20px;
+    
 }
 img{
     height: 200px;
     width: 300px;
-    border-radius: 5px;
+    border-radius: 10px;
     grid-row-start: auto;
-    scale: 1;
+    column-gap: -10%;
 }
 img:hover
 {
+    border-radius: 15px;
+    border: 4px solid rgb(0, 0, 0);
     scale:1.1;
+}
+
+.container:hover .slider{
     animation-play-state: paused;
 }
 
-.first,.second,.third,.fourth,.fifth,.six
+.slider
 {
     position: relative;
     animation: move1 10s;
     animation-timing-function: linear;
-    animation-iteration-count: 2;
+    animation-iteration-count: infinite;
 }
 @keyframes move1 {
-    0%{transform: translate(1800px,0px)}
-    100%{transform: translate(-2000px,0px)}
-    0%{transform: translate(1800px,0px)}
-}
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-150%);
+    }
+    0% {
+        transform: translateX(100%);
+    }
+}  
