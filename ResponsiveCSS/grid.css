@@ -20,23 +20,32 @@ img{
     border-radius: 10px;
     grid-row-start: auto;
     column-gap: -10%;
+    transition-duration: 0.3s;
 }
-img:hover
+.first:hover,.second:hover,.third:hover,.fourth:hover,.fifth:hover,.six:hover
 {
     box-shadow: 10px 10px 1000px rgb(0 0 0 / 0.9);
     border-radius: 15px;
     border: 4px solid rgb(0, 0, 0);
     scale:1.1;
+    transition-duration:0.3;
 }
-
+ 
 .container:hover .slider{
     animation-play-state: paused;
+    & body{
+        background: url("1.jpg") no-repeat;
+        background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+    
+    }
 }
-
 .slider
 {
     position: relative;
-    animation: move1 10s;
+    animation: move1 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
@@ -68,41 +77,26 @@ img:hover
     overflow: hidden;
     align-content: center;
     border-radius: 10px;
+    transition-duration: 0.5s;
 }
 #scroll img{
+    transition-duration: 0.5s;
     display: block;
     transform: translate(-100px,0px);
-  }
-  #scroll:hover 
-  {
-    animation: expand 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+}
+#scroll:hover 
+{
     width: 300px;
     & img {
-        animation: imgpos 0.5s;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;
+        transform: translate(0px,0px);
     }
-  }
-  @keyframes expand {
-    0%{margin-left:30px;width:100px;}
-    100%{width: 300px;}
-    0%{ margin-left:30px;width:100px;}
-  }
-  @keyframes imgpos {
-    0%{transform: translate(-100px,0px);}
-    100%{transform: translate(0px,0px);}
-    0%{transform: translate(-100px,0px);}
-  }
+}
+@keyframes expands {
+from{width:100px;}
+to{width: 300px;}
+}
+@keyframes imgposs {
+0%{transform: translate(-100px,0px);}
+100%{transform: translate(0px,0px);}
+}
 
-
-  /* #scoll:hover::after{
-    animation: imgposrev 0.5s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-  }
-  @keyframes imgposrev {
-    0%{width: 300px;}
-    100%{margin-left:30px;width:100px;}
-  } */
